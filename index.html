@@ -1,621 +1,839 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bhanu Prakash Pagadala | Data Engineer</title>
-  <meta name="description"
-    content="Bhanu Prakash Pagadala | Data Engineer skilled in SQL, Teradata, Informatica PowerCenter, ETL, Control-M,Power BI, Python and Snowflake.">
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-    body {
-      font-famil: Arial,sans-serif;
-      background; #0b1120;
-      color: #e5e7eb;
-      line-height: 1.6;
-    }
- a {
- color: inherit;
- text-decoration: none;
- }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- .container {
- width: 90%;
- max-width: 1100px;
- margin: auto;
- }
+<title>Bhanu Prakash Pagadala | Data Analyst</title>
 
- /* NAVBAR */
- nav {
- position: sticky;
- top: 0;
- z-index: 1000;
- background: rgba(11, 17, 32, 0.95);
- border-bottom: 1px solid #1f2937;
- backdrop-filter: blur(10px);
- }
+<meta name="description"
+content="Portfolio of Bhanu Prakash Pagadala - Data Analyst with 3 years of experience in SQL, Python, Power BI, ETL and enterprise data operations.">
 
- .nav-inner {
- height: 70px;
- display: flex;
- align-items: center;
- justify-content: space-between;
- }
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
 
- .logo {
- font-size: 22px;
- font-weight: bold;
- color: #60a5fa;
- }
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #080b12;
+color: #f5f7fa;
+line-height: 1.6;
+}
 
- .nav-links {
- display: flex;
- gap: 25px;
- list-style: none;
- }
+a {
+text-decoration: none;
+color: inherit;
+}
 
- .nav-links a {
- color: #cbd5e1;
- font-size: 14px;
- transition: 0.3s;
- }
+/* NAVBAR */
+nav {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: rgba(8, 11, 18, 0.92);
+backdrop-filter: blur(12px);
+border-bottom: 1px solid #1d2533;
+}
 
- .nav-links a:hover {
- color: #60a5fa;
- }
+.nav-container {
+max-width: 1150px;
+margin: auto;
+padding: 18px 25px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
 
- /* HERO */
- .hero {
+.logo {
+font-size: 21px;
+font-weight: bold;
+color: #ffffff;
+}
+
+.logo span {
+color: #3b82f6;
+}
+
+.nav-links {
+display: flex;
+gap: 28px;
+list-style: none;
+}
+
+.nav-links a {
+color: #b8c0cc;
+font-size: 14px;
+transition: 0.3s;
+}
+
+.nav-links a:hover {
+color: #3b82f6;
+}
+
+/* HERO */
+.hero {
+min-height: 88vh;
 display: flex;
 align-items: center;
-gap: 60px;
+position: relative;
+overflow: hidden;
+}
+
+.hero::before {
+content: "";
+position: absolute;
+width: 500px;
+height: 500px;
+background: #2563eb;
+opacity: 0.10;
+filter: blur(130px);
+border-radius: 50%;
+top: 50px;
+left: -150px;
+}
+
+.hero-container {
+max-width: 1150px;
+width: 100%;
+margin: auto;
+padding: 80px 25px;
+display: grid;
+grid-template-columns: 1.3fr 0.7fr;
+gap: 50px;
+align-items: center;
+}
+
+.small-title {
+color: #3b82f6;
+font-size: 15px;
+font-weight: bold;
+letter-spacing: 2px;
+text-transform: uppercase;
+margin-bottom: 15px;
+}
+
+.hero h1 {
+font-size: clamp(45px, 7vw, 78px);
+line-height: 1.05;
+margin-bottom: 20px;
+}
+
+.hero h1 span {
+color: #3b82f6;
+}
+
+.hero-description {
+max-width: 650px;
+color: #aab3c1;
+font-size: 18px;
+margin-bottom: 30px;
+}
+
+.hero-buttons {
+display: flex;
+gap: 15px;
 flex-wrap: wrap;
 }
 
-.hero-photo img {
-width: 260px;
-height: 260px;
-object-fit: cover;
-border-radius: 50%;
-border: 4px solid #2563eb;
+.btn {
+padding: 13px 22px;
+border-radius: 8px;
+font-weight: bold;
+font-size: 14px;
+transition: 0.3s;
+display: inline-block;
 }
-   
- .hero {
- min-height: 90vh;
- display: flex;
- align-items: center;
- }
 
- .hero-content {
- max-width: 800px;
- }
+.btn-primary {
+background: #2563eb;
+color: white;
+}
 
- .hello {
- color: #60a5fa;
- font-size: 18px;
- margin-bottom: 10px;
- }
+.btn-primary:hover {
+background: #1d4ed8;
+transform: translateY(-2px);
+}
 
- .hero h1 {
- font-size: clamp(42px, 7vw, 72px);
- line-height: 1.05;
- margin-bottom: 15px;
- color: white;
- }
+.btn-secondary {
+border: 1px solid #334155;
+color: #e2e8f0;
+}
 
- .hero h2 {
- font-size: clamp(24px, 4vw, 38px);
- color: #94a3b8;
- margin-bottom: 20px;
- }
+.btn-secondary:hover {
+border-color: #3b82f6;
+color: #3b82f6;
+}
 
- .hero p {
- max-width: 700px;
- color: #94a3b8;
- font-size: 17px;
- margin-bottom: 30px;
- }
+/* PROFILE IMAGE */
+.hero-image {
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
- .buttons {
- display: flex;
- gap: 15px;
- flex-wrap: wrap;
- }
+.image-ring {
+width: 320px;
+height: 320px;
+padding: 5px;
+border-radius: 50%;
+background: linear-gradient(135deg, #2563eb, #60a5fa, #1e40af);
+box-shadow: 0 0 70px rgba(37, 99, 235, 0.25);
+}
 
- .btn {
- padding: 12px 22px;
- border-radius: 8px;
- border: 1px solid #334155;
- font-weight: bold;
- transition: 0.3s;
- }
+.image-ring img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+border-radius: 50%;
+background: white;
+}
 
- .btn-primary {
- background: #2563eb;
- border-color: #2563eb;
- color: white;
- }
+/* SECTIONS */
+section {
+max-width: 1150px;
+margin: auto;
+padding: 100px 25px;
+}
 
- .btn-primary:hover {
- background: #1d4ed8;
- }
+.section-title {
+font-size: 38px;
+margin-bottom: 12px;
+}
 
- .btn-secondary:hover {
- background: #1e293b;
- }
+.section-title span {
+color: #3b82f6;
+}
 
- /* SECTIONS */
- section {
- padding: 90px 0;
- }
+.section-subtitle {
+color: #7f8a9a;
+margin-bottom: 45px;
+}
 
- .section-title {
- font-size: 32px;
- color: white;
- margin-bottom: 10px;
- }
+/* ABOUT */
+.about-text {
+max-width: 850px;
+color: #aeb7c5;
+font-size: 17px;
+}
 
- .section-subtitle {
- color: #64748b;
- margin-bottom: 35px;
- }
+.about-text p {
+margin-bottom: 18px;
+}
 
- /* ABOUT */
- .about-text {
- max-width: 850px;
- color: #94a3b8;
- font-size: 17px;
- }
+/* SKILLS */
+.skills-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 15px;
+}
 
- .highlight {
- color: #60a5fa;
- }
+.skill {
+background: #10151f;
+border: 1px solid #202938;
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+transition: 0.3s;
+}
 
- /* SKILLS */
- .skills {
- display: flex;
- flex-wrap: wrap;
- gap: 12px;
- }
+.skill:hover {
+transform: translateY(-5px);
+border-color: #2563eb;
+}
 
- .skill {
- padding: 10px 18px;
- border-radius: 25px;
- background: #111827;
- border: 1px solid #1f2937;
- color: #cbd5e1;
- }
+.skill strong {
+color: #e5e7eb;
+display: block;
+margin-bottom: 5px;
+}
 
- /* PROJECTS */
- .projects {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
- gap: 22px;
- }
+.skill span {
+color: #7f8a9a;
+font-size: 13px;
+}
 
- .card {
- background: #111827;
- border: 1px solid #1f2937;
- border-radius: 14px;
- padding: 25px;
- transition: 0.3s;
- }
+/* PROJECTS */
+.projects-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+}
 
- .card:hover {
- transform: translateY(-5px);
- border-color: #3b82f6;
- }
+.project {
+background: #10151f;
+border: 1px solid #202938;
+padding: 28px;
+border-radius: 12px;
+transition: 0.3s;
+}
 
- .card h3 {
- color: white;
- margin-bottom: 12px;
- }
+.project:hover {
+transform: translateY(-5px);
+border-color: #2563eb;
+}
 
- .card p {
- color: #94a3b8;
- margin-bottom: 18px;
- }
+.project-number {
+color: #3b82f6;
+font-weight: bold;
+font-size: 13px;
+}
 
- .tech {
- color: #60a5fa;
- font-size: 14px;
- }
+.project h3 {
+margin: 10px 0;
+font-size: 22px;
+}
 
- /* EXPERIENCE */
- .timeline {
- border-left: 2px solid #1e40af;
- padding-left: 25px;
- max-width: 850px;
- }
+.project p {
+color: #8f99a8;
+font-size: 15px;
+}
 
- .timeline-item {
- margin-bottom: 35px;
- position: relative;
- }
+.project-tags {
+margin-top: 20px;
+display: flex;
+gap: 8px;
+flex-wrap: wrap;
+}
 
- .timeline-item::before {
- content: "";
- position: absolute;
- width: 11px;
- height: 11px;
- background: #3b82f6;
- border-radius: 50%;
- left: -32px;
- top: 7px;
- }
+.tag {
+background: #182131;
+color: #93c5fd;
+padding: 5px 10px;
+border-radius: 5px;
+font-size: 12px;
+}
 
- .timeline-item h3 {
- color: white;
- font-size: 20px;
- }
+/* EXPERIENCE */
+.experience {
+border-left: 2px solid #2563eb;
+padding-left: 25px;
+}
 
- .timeline-item .date {
- color: #60a5fa;
- font-size: 14px;
- margin: 5px 0 10px;
- }
+.experience h3 {
+font-size: 23px;
+}
 
- .timeline-item p {
- color: #94a3b8;
- }
+.experience .company {
+color: #3b82f6;
+margin: 5px 0;
+}
 
- /* CERTIFICATIONS */
- .certifications {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
- gap: 20px;
- }
+.experience .date {
+color: #707b8c;
+font-size: 14px;
+margin-bottom: 15px;
+}
 
- /* CONTACT */
- .contact-box {
- background: #111827;
- border: 1px solid #1f2937;
- padding: 35px;
- border-radius: 15px;
- text-align: center;
- }
+.experience p {
+color: #9da7b5;
+max-width: 850px;
+}
 
- .contact-box p {
- color: #94a3b8;
- margin: 10px 0 25px;
- }
+/* CERTIFICATIONS */
+.cert-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 18px;
+}
 
- /* FOOTER */
- footer {
- border-top: 1px solid #1f2937;
- text-align: center;
- padding: 30px;
- color: #64748b;
- }
+.cert {
+background: #10151f;
+border: 1px solid #202938;
+padding: 25px;
+border-radius: 10px;
+}
 
- /* MOBILE */
- @media (max-width: 700px) {
- .nav-links {
- display: none;
- }
+.cert h3 {
+margin-bottom: 8px;
+}
 
- .hero {
- min-height: 80vh;
- }
+.cert p {
+color: #7f8a9a;
+font-size: 14px;
+}
 
- section {
- padding: 65px 0;
- }
- }
- </style>
+/* CONTACT */
+.contact-box {
+background: linear-gradient(135deg, #101827, #0d121b);
+border: 1px solid #243047;
+padding: 50px;
+border-radius: 15px;
+text-align: center;
+}
+
+.contact-box h2 {
+font-size: 35px;
+margin-bottom: 12px;
+}
+
+.contact-box p {
+color: #8f99a8;
+margin-bottom: 25px;
+}
+
+.contact-links {
+display: flex;
+justify-content: center;
+gap: 15px;
+flex-wrap: wrap;
+}
+
+/* FOOTER */
+footer {
+border-top: 1px solid #1d2533;
+text-align: center;
+padding: 25px;
+color: #687386;
+font-size: 13px;
+}
+
+/* MOBILE */
+@media (max-width: 850px) {
+.nav-links {
+display: none;
+}
+
+.hero-container {
+grid-template-columns: 1fr;
+text-align: center;
+}
+
+.hero-description {
+margin-left: auto;
+margin-right: auto;
+}
+
+.hero-buttons {
+justify-content: center;
+}
+
+.hero-image {
+order: -1;
+}
+
+.image-ring {
+width: 240px;
+height: 240px;
+}
+
+.skills-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.projects-grid {
+grid-template-columns: 1fr;
+}
+
+.cert-grid {
+grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 500px) {
+.hero {
+min-height: auto;
+}
+
+section {
+padding: 70px 20px;
+}
+
+.hero-container {
+padding: 70px 20px;
+}
+
+.hero h1 {
+font-size: 44px;
+}
+
+.skills-grid {
+grid-template-columns: 1fr;
+}
+
+.contact-box {
+padding: 30px 20px;
+}
+}
+</style>
 </head>
 
 <body>
 
- <!-- NAVIGATION -->
- <nav>
- <div class="container nav-inner">
- <div class="logo">BP.</div>
-
- <ul class="nav-links">
- <li><a href="#about">About</a></li>
- <li><a href="#skills">Skills</a></li>
- <li><a href="#projects">Projects</a></li>
- <li><a href="#experience">Experience</a></li>
- <li><a href="#contact">Contact</a></li>
- </ul>
- </div>
- </nav>
-
-
- <!-- HERO -->
- <section class="hero">
- <div class="container
- <div class="hero-photo">
-   <img src="profile.jpg" alt="Bhanu Prakash Pagadala"
-     style="width:260px;height:260px;object-fit:cover;border-radius:50%;border:4px solid #2563eb;display:block;">
- </div>
- <div class="hero-content">
-
- <div class="hello">Hello, I'm</div>
-
- <h1>Bhanu Prakash Pagadala</h1>
-
- <h2>Data Analyst</h2>
-
- <p>
- Software Engineer with 3 years of experience in data operations,
- SQL, ETL and enterprise data environments. Currently building
- expertise in Data Analytics, Power BI, Python, Snowflake and BigQuery.
- </p>
-
- <div class="buttons">
- <a href="#projects" class="btn btn-primary">
- View My Projects
- </a>
-<a href="Bhanu_Prakash_Pagadala_Resume.pdf" target="_blank" class="btn btn-secondary">
- Download Resume
- </a>
- <a href="#contact" class="btn btn-secondary">
- Contact Me
- </a>
- </div>
-
- </div>
- </section>
-
-
- <!-- ABOUT -->
- <section id="about">
- <div class="container">
-
- <h2 class="section-title">About Me</h2>
-
- <p class="section-subtitle">
- Turning data into meaningful insights
- </p>
-
- <p class="about-text">
- I am a Software Engineer with around
- <span class="highlight">3 years of professional experience</span>
- working in data operations and enterprise data environments.
- My experience includes SQL, Teradata, Informatica, ETL workflows,
- Control-M job monitoring and data validation.
- <br><br>
- I am now focusing my career toward
- <span class="highlight">Data Analytics</span>,
- developing skills in Power BI, Python, Snowflake, BigQuery and
- advanced SQL.
- </p>
-
- </div>
- </section>
-
-
- <!-- SKILLS -->
- <section id="skills">
- <div class="container">
-
- <h2 class="section-title">Skills</h2>
-
- <p class="section-subtitle">
- Technologies and tools I work with
- </p>
-
- <div class="skills">
+<!-- NAVIGATION -->
+<nav>
+<div class="nav-container">
+<div class="logo">Bhanu<span>.</span></div>
+
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#certifications">Certifications</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</nav>
+
+
+<!-- HERO -->
+<header class="hero">
+<div class="hero-container">
+
+<div>
+<div class="small-title">Data Analyst • Software Engineer</div>
+
+<h1>
+Bhanu Prakash<br>
+<span>Pagadala.</span>
+</h1>
+
+<p class="hero-description">
+Data-focused Software Engineer with around 3 years of experience
+working with SQL, ETL, enterprise data operations and analytics.
+Passionate about turning data into meaningful business insights.
+</p>
+
+<div class="hero-buttons">
+<a class="btn btn-primary"
+href="./Bhanu_Prakash_Pagadala_Resume.pdf"
+target="_blank">
+Download Resume
+</a>
+
+<a class="btn btn-secondary" href="#projects">
+View My Work
+</a>
+</div>
+</div>
+
+
+<div class="hero-image">
+<div class="image-ring">
+<img src="./profile.jpg"
+alt="Bhanu Prakash Pagadala">
+</div>
+</div>
+
+</div>
+</header>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+<h2 class="section-title">
+About <span>Me</span>
+</h2>
+
+<p class="section-subtitle">
+A little about my professional journey
+</p>
+
+<div class="about-text">
 
- <div class="skill">SQL</div>
- <div class="skill">Teradata</div>
- <div class="skill">Python</div>
- <div class="skill">Power BI</div>
- <div class="skill">Excel</div>
- <div class="skill">Pandas</div>
- <div class="skill">NumPy</div>
- <div class="skill">Informatica</div>
- <div class="skill">ETL</div>
- <div class="skill">Control-M</div>
- <div class="skill">Snowflake</div>
- <div class="skill">BigQuery</div>
- <div class="skill">GitHub</div>
- </div>
+<p>
+I am a Software Engineer currently working at Tech Mahindra,
+with approximately 3 years of experience in enterprise data
+operations and ETL environments.
+</p>
+
+<p>
+My experience includes working with Teradata SQL, Informatica,
+Control-M, ETL workflows, data validation and production support.
+I am also developing my skills in Python, Power BI, Snowflake
+and Google BigQuery.
+</p>
+
+<p>
+My career goal is to move further into data analytics and build
+solutions that help businesses make better decisions using data.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills">
+
+<h2 class="section-title">
+My <span>Skills</span>
+</h2>
 
- </div>
- </section>
+<p class="section-subtitle">
+Technologies and tools I work with
+</p>
 
+<div class="skills-grid">
 
- <!-- PROJECTS -->
- <section id="projects">
- <div class="container">
+<div class="skill">
+<strong>SQL</strong>
+<span>Teradata • Data Analysis</span>
+</div>
+
+<div class="skill">
+<strong>Python</strong>
+<span>Pandas • NumPy</span>
+</div>
 
- <h2 class="section-title">Projects</h2>
+<div class="skill">
+<strong>Power BI</strong>
+<span>Dashboards • DAX</span>
+</div>
 
- <p class="section-subtitle">
- Data analytics projects
- </p>
+<div class="skill">
+<strong>Excel</strong>
+<span>Analysis • Reporting</span>
+</div>
 
- <div class="projects">
+<div class="skill">
+<strong>Informatica</strong>
+<span>PowerCenter • ETL</span>
+</div>
+
+<div class="skill">
+<strong>Control-M</strong>
+<span>Job Scheduling • Monitoring</span>
+</div>
+
+<div class="skill">
+<strong>Snowflake</strong>
+<span>Data Warehousing</span>
+</div>
 
- <div class="card">
- <h3> Sales Analytics Dashboard</h3>
+<div class="skill">
+<strong>BigQuery</strong>
+<span>Google Cloud • SQL</span>
+</div>
 
- <p>
- Interactive dashboard to analyze sales performance,
- revenue, products, regions and business KPIs.
- </p>
+</div>
 
- <div class="tech">
- Power BI • SQL • Excel
- </div>
- </div>
+</section>
 
 
- <div class="card">
- <h3> E-Commerce Data Analysis</h3>
+<!-- PROJECTS -->
+<section id="projects">
 
- <p>
- Analyzed customer orders and sales data to identify
- trends, top products and business performance.
- </p>
+<h2 class="section-title">
+Featured <span>Projects</span>
+</h2>
 
- <div class="tech">
- SQL • Python • Pandas
- </div>
- </div>
+<p class="section-subtitle">
+Some projects that showcase my analytical and technical skills
+</p>
 
+<div class="projects-grid">
 
- <div class="card">
- <h3> Customer Churn Analysis</h3>
+<div class="project">
+<div class="project-number">01</div>
+<h3>Sales Analytics Dashboard</h3>
 
- <p>
- Explored customer behavior and identified factors
- associated with customer churn.
- </p>
+<p>
+Interactive Power BI dashboard designed to analyze sales,
+revenue, product performance and business KPIs.
+</p>
 
- <div class="tech">
- Python • Pandas • Power BI
- </div>
- </div>
+<div class="project-tags">
+<span class="tag">Power BI</span>
+<span class="tag">SQL</span>
+<span class="tag">DAX</span>
+</div>
+</div>
 
 
- <div class="card">
- <h3> ETL Data Pipeline</h3>
+<div class="project">
+<div class="project-number">02</div>
+<h3>E-Commerce Data Analysis</h3>
 
- <p>
- Designed an ETL workflow for extracting, transforming
- and loading data into a structured analytical environment.
- </p>
+<p>
+Data analysis project focused on customer behavior,
+sales trends, product performance and business insights.
+</p>
 
- <div class="tech">
- SQL • Informatica • ETL
- </div>
- </div>
+<div class="project-tags">
+<span class="tag">Python</span>
+<span class="tag">Pandas</span>
+<span class="tag">SQL</span>
+</div>
+</div>
 
- </div>
 
- </div>
- </section>
+<div class="project">
+<div class="project-number">03</div>
+<h3>Customer Churn Analysis</h3>
 
+<p>
+Analytical project exploring customer behavior and identifying
+patterns that can help businesses reduce customer churn.
+</p>
 
- <!-- EXPERIENCE -->
- <section id="experience">
- <div class="container">
+<div class="project-tags">
+<span class="tag">Python</span>
+<span class="tag">Pandas</span>
+<span class="tag">Power BI</span>
+</div>
+</div>
 
- <h2 class="section-title">Experience</h2>
 
- <p class="section-subtitle">
- My professional journey
- </p>
+<div class="project">
+<div class="project-number">04</div>
+<h3>ETL Data Pipeline</h3>
 
- <div class="timeline">
+<p>
+ETL workflow designed to extract, transform and load data while
+performing validation and monitoring of enterprise data processes.
+</p>
 
- <div class="timeline-item">
+<div class="project-tags">
+<span class="tag">Informatica</span>
+<span class="tag">SQL</span>
+<span class="tag">ETL</span>
+<span class="tag">Control-M</span>
+</div>
+</div>
 
- <h3>Software Engineer — Tech Mahindra</h3>
+</div>
 
- <div class="date">
- September 2023 – Present
- </div>
+</section>
 
- <p>
- Working on an enterprise data operations project,
- supporting data processing and ETL workflows.
- Responsibilities include Teradata SQL, Informatica,
- Control-M job monitoring, data validation, DML operations,
- log analysis and production support.
- </p>
 
- </div>
+<!-- EXPERIENCE -->
+<section id="experience">
 
- </div>
+<h2 class="section-title">
+Work <span>Experience</span>
+</h2>
 
- </div>
- </section>
+<p class="section-subtitle">
+My professional experience
+</p>
 
+<div class="experience">
 
- <!-- CERTIFICATIONS -->
- <section id="certifications">
- <div class="container">
+<h3>Software Engineer</h3>
 
- <h2 class="section-title">Certifications & Learning</h2>
+<div class="company">
+Tech Mahindra
+</div>
 
- <p class="section-subtitle">
- Continuous learning and professional development
- </p>
+<div class="date">
+September 2023 – Present
+</div>
 
- <div class="certifications">
+<p>
+Working on enterprise data operations and production support.
+Responsibilities include Teradata SQL, Informatica ETL workflows,
+Control-M job monitoring, data validation, DML operations,
+production issue analysis and coordination with different teams.
+</p>
 
- <div class="card">
- <h3>Power BI</h3>
- <p>
- Power BI certification / learning badge.
- </p>
- </div>
+<br>
 
- <div class="card">
- <h3>Snowflake</h3>
- <p>
- Snowflake Data Warehousing Workshop Badge.
- </p>
- </div>
+<p>
+Currently expanding my knowledge in Power BI, Python,
+Snowflake and Google BigQuery to transition toward
+data analytics roles.
+</p>
 
- <div class="card">
- <h3>Google Cloud</h3>
- <p>
- Google Cloud data engineering learning and certification experience.
- </p>
- </div>
+</div>
 
- </div>
+</section>
 
- </div>
- </section>
 
+<!-- CERTIFICATIONS -->
+<section id="certifications">
 
- <!-- CONTACT -->
- <section id="contact">
- <div class="container">
+<h2 class="section-title">
+Certifications & <span>Learning</span>
+</h2>
 
- <div class="contact-box">
+<p class="section-subtitle">
+Continuous learning and professional development
+</p>
 
- <h2 class="section-title">
- Let's Connect
- </h2>
+<div class="cert-grid">
 
- <p>
- I'm open to Data Analyst and Data/BI opportunities.
- </p>
+<div class="cert">
+<h3>Power BI</h3>
+<p>
+Power BI certification / learning focused on dashboards,
+data visualization and business analytics.
+</p>
+</div>
 
- <div class="buttons" style="justify-content:center;">
+<div class="cert">
+<h3>Snowflake</h3>
+<p>
+Snowflake Data Warehousing Workshop Badge and
+hands-on data warehouse learning.
+</p>
+</div>
 
- <a href="mailto:pagadalabhanuprakash15@gmail.com"
- class="btn btn-primary">
- Email Me
- </a>
+<div class="cert">
+<h3>Google Cloud</h3>
+<p>
+Google Cloud data engineering and BigQuery learning
+focused on modern cloud data platforms.
+</p>
+</div>
 
- <a href="https://www.linkedin.com/in/bhanu-prakash-pagadala-660730231/"
- target="_blank"
- class="btn btn-secondary">
- LinkedIn
- </a>
+</div>
 
- <a href="https://github.com/Bhanuprakashpagadala"
- target="_blank"
- class="btn btn-secondary">
- GitHub
- </a>
+</section>
 
- </div>
 
- </div>
+<!-- CONTACT -->
+<section id="contact">
 
- </div>
- </section>
+<div class="contact-box">
 
+<h2>Let's Connect</h2>
 
- <!-- FOOTER -->
- <footer>
- © 2026 Bhanu Prakash Pagadala · Built with HTML & CSS
- </footer>
+<p>
+I'm open to opportunities in Data Analytics,
+Data Engineering and related roles.
+</p>
+
+<div class="contact-links">
+
+<!-- Replace the two placeholder links below with your existing links -->
+
+<a class="btn btn-primary"
+href="https://www.linkedin.com/in/bhanu-prakash-pagadala-660730231/"
+target="_blank">
+LinkedIn
+</a>
+
+<a class="btn btn-secondary"
+href="https://github.com/Bhanuprakashpagadala"
+target="_blank">
+GitHub
+</a>
+
+<a class="btn btn-secondary"
+href="mailto:pagadalabhanuprakash15@gmail.com">
+Email Me
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+© 2026 Bhanu Prakash Pagadala. Built with HTML & CSS.
+</footer>
+
 
 </body>
 </html>
